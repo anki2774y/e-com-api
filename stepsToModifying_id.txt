@@ -1,0 +1,3 @@
+/**- STEPS FOR MODIFYING _id in MongoDB */ 
+1. Counter collection (_id:"cartItemId", value:0)
+2. While adding cart items, increment the counter and then use counter value as id to cart item document 
