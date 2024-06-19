@@ -8,7 +8,10 @@ import { MongoClient } from 'mongodb';
 let client;
 
 export const connectToMongoDB = () => {
-    MongoClient.connect(process.env.DB_URL)
+    MongoClient.connect(process.env.DB_URL. {
+            useNewUrlParser: true,
+            useUnifiedTopology: true
+        })
         .then(clientInstance => {
             client = clientInstance;
             console.log("Mongodb is connected");   
