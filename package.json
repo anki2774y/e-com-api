@@ -4,12 +4,8 @@
   "description": "APIs for E-Commerce Application",
   "main": "server.js",
   "scripts": {
-<<<<<<< HEAD
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
-=======
-    "test": "echo \"Error: no test specified\" && exit 1"
->>>>>>> fdc6a28338ffc5639c41d2028fe4c738e43fe956
   },
   "type": "module",
   "author": "Ankit Kumar",
