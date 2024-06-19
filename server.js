@@ -100,8 +100,9 @@ server.use((req, res) => {
 })
 
 // 4. Specify port
-server.listen(3200, () => {
-    console.log("Server is running at 3200");
+const PORT = process.env.PORT || 3200;
+server.listen(PORT, () => {
+    console.log(`Server is running at ${PORT}`);
     connectToMongoDB();
-});
+}); 
 

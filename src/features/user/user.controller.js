@@ -34,6 +34,7 @@ export default class UserController {
             const user = await this.userRepository.findByEmail(req.body.email);
             
             if(!user) {
+                // console.log("Invalid Credentials while singin");
                 return res
                     .status(400)
                     .send("InValid Credentials");
@@ -41,6 +42,7 @@ export default class UserController {
                 // 2. compare password with hashed password 
                 const result = await bcrypt.compare(req.body.password, user.password);
                 if(result) {
+                    // console.log("Valid Credentials while singin after finding email");
                     // 3. Create token 
                     const token = jwt.sign(
                         {
