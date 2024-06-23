@@ -7,12 +7,6 @@
     },
     "servers":[
         {
-            "url":"http://localhost:3200"
-        }, 
-        {
-            "url":"https://e-com-api-a29f.onrender.com"
-        },
-        {
             "url":"https://e-com-api-2.onrender.com"
         }
     ],
